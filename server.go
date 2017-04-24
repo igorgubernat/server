@@ -6,7 +6,7 @@ import (
     "io"
     "os"
     "sort"
-    "quicksort"
+    "github.com/igorgubernat/quicksort"
     "time"
     "strconv"
     "fmt"
@@ -14,9 +14,10 @@ import (
 )
 
 func main () {
+    port := os.Getenv("PORT")
     http.HandleFunc("/", form)
     http.HandleFunc("/result", result)
-    http.ListenAndServe(":3000", nil)
+    http.ListenAndServe(":" + port, nil)
 }
 
 func form (w http.ResponseWriter, r *http.Request) {
