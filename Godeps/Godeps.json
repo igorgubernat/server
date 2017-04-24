@@ -1,0 +1,14 @@
+{
+	"ImportPath": "github.com/igorgubernat/server",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/igorgubernat/quicksort",
+			"Rev": "3c5e065e00bb93a7a36507c5e6d42d5d0b7ce4d2"
+		}
+	]
+}
